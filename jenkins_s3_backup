@@ -7,7 +7,7 @@ stage ('backup')
 steps{
   sh '''
      cd /var/lib
-     zip ${WORKSPACE}/backup.zip jenkins	 
+     zip -r ${WORKSPACE}/backup.zip jenkins	 
   '''
 
 }
